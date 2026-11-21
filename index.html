@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101114">
+<meta name="description" content="OREDA CASINO SNIPER ULTIMATE — analyse statistique et simulations éducatives.">
+<link rel="manifest" href="manifest.json">
+<title>OREDA CASINO SNIPER ULTIMATE</title>
+<style>
+:root{--bg:#101114;--panel:#1b1d22;--panel2:#252830;--gold:#e7bd62;--muted:#a7a9b0;--green:#64d69a;--red:#ff7777}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#f5f5f5;font:15px system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:22px 17px 17px;background:linear-gradient(135deg,#292216,#101114 75%);border-bottom:1px solid #403521}
+.brand{color:var(--gold);font-size:11px;letter-spacing:3px;font-weight:850}.title{font-size:22px;font-weight:900;margin:6px 0}.sub{color:var(--muted);font-size:12px}
+main{max-width:780px;margin:auto;padding:14px 13px 88px}.capital{background:linear-gradient(120deg,#2c2518,#1b1d22);border:1px solid #6b552e;border-radius:15px;padding:14px;margin-bottom:12px}
+.capnum{font-size:27px;color:var(--gold);font-weight:900}.muted{color:var(--muted)}.tiny{font-size:11px;line-height:1.5}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:12px 0}.tab,.game{background:var(--panel);border:1px solid #383b44;color:#eee;border-radius:10px;padding:10px 5px;font-weight:750}.tab.active,.game.active{border-color:var(--gold);color:var(--gold);background:#2a251b}
+.card{background:var(--panel);border:1px solid #30333b;border-radius:14px;padding:14px;margin:11px 0}h2{font-size:16px;margin:0 0 11px}h3{font-size:13px;color:var(--gold);margin:13px 0 7px}
+label{display:block;color:var(--muted);font-size:12px;margin:9px 0 5px}input,select,textarea{width:100%;background:#111318;color:#fff;border:1px solid #3a3d47;border-radius:9px;padding:10px;font:inherit}textarea{min-height:65px}
+button.primary{width:100%;border:0;border-radius:10px;padding:12px;background:var(--gold);color:#18140d;font-weight:900;margin-top:11px}
+button.secondary{border:1px solid #4b4e57;border-radius:9px;padding:9px 11px;background:#252830;color:#eee}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.metric{background:var(--panel2);padding:11px;border-radius:10px;min-width:0}.metric small{display:block;color:var(--muted);font-size:10px}.metric strong{font-size:18px;overflow-wrap:anywhere}
+.warning{border-left:3px solid var(--gold);padding:10px 11px;background:#29251d;border-radius:7px;color:#e8dfca;font-size:12px;line-height:1.5}
+.hidden{display:none!important}.pill{display:inline-block;border:1px solid #63512f;color:var(--gold);border-radius:99px;padding:3px 8px;font-size:10px;font-weight:850}
+.gamegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.game:last-child{grid-column:span 2}
+.result{background:#111318;border:1px solid #3b3e47;border-radius:10px;padding:12px;margin-top:10px;line-height:1.55}
+.entry{display:flex;justify-content:space-between;gap:9px;padding:9px 0;border-bottom:1px solid #343740;font-size:13px}
+footer{position:fixed;bottom:0;left:0;right:0;background:#111318ed;border-top:1px solid #343740;padding:9px;text-align:center;color:var(--muted);font-size:10px;backdrop-filter:blur(10px)}
+.preview{max-width:100%;max-height:190px;margin-top:8px;border-radius:8px}
+</style>
+</head>
+<body>
+<header><div class="brand">BUZNESS’Oreda · ANALYTICS</div><div class="title">OREDA CASINO SNIPER</div><div class="sub">ULTIMATE · ANDROID EDITION <span class="pill">BÊTA 0.2 · 5 MOTEURS</span></div></header>
+<main>
+<div class="capital"><div class="tiny muted">CAPITAL VIRTUEL DE SIMULATION</div><div class="capnum">5 000 FCFA</div><div class="tiny muted">Aucun dépôt, aucune mise réelle et aucune connexion à 1xBet.</div></div>
+<div class="tabs"><button class="tab active" data-page="home">Accueil</button><button class="tab" data-page="engines">Moteurs</button><button class="tab" data-page="history">Historique</button></div>
+
+<section id="home" class="page">
+ <div class="card"><h2>Centre de pilotage</h2><div class="grid">
+ <div class="metric"><small>MOTEURS DÉVELOPPÉS</small><strong>5 / 5</strong></div><div class="metric"><small>OBSERVATIONS SAISIES</small><strong id="totalObs">0</strong></div>
+ <div class="metric"><small>MISES AUTOMATIQUES</small><strong>OFF</strong></div><div class="metric"><small>CAPITAL SIMULÉ</small><strong>5 000 F</strong></div></div>
+ <p class="tiny muted">Choisis un moteur pour consulter ses calculs spécialisés. Les résultats sont des statistiques et des simulations, pas des prédictions du prochain tour.</p></div>
+ <div class="card"><h2>Les cinq moteurs</h2><div class="gamegrid">
+ <button class="game" data-engine="Aviator">✈️ AVIATOR</button><button class="game" data-engine="Mines">💣 MINES</button><button class="game" data-engine="Plinko">🔴 PLINKO</button><button class="game" data-engine="Roulette">🎯 ROULETTE</button><button class="game" data-engine="Slots">🎰 MACHINES À SOUS</button></div></div>
+ <div class="warning"><b>Rappel important :</b> les jeux de casino sont conçus avec un avantage mathématique pour l'opérateur. Une série passée ne permet pas de connaître le prochain résultat. L'outil n'indique aucun pari « sûr ».</div>
+</section>
+
+<section id="engines" class="page hidden">
+ <div class="card"><h2>Sélection du moteur</h2><select id="engineSelect"><option>Aviator</option><option>Mines</option><option>Plinko</option><option>Roulette</option><option>Slots</option></select><div id="engineDescription" class="tiny muted" style="margin-top:8px"></div></div>
+ <div class="card"><h2 id="calcTitle">Calcul spécialisé</h2><div id="engineFields"></div><button class="primary" id="runEngine">Lancer le calcul</button><div id="engineResult" class="result hidden" aria-live="polite"></div></div>
+ <div class="card"><h2>Enregistrer une observation réelle affichée</h2><label>Valeur / résultat observé</label><input id="obsValue" placeholder="Ex. 1.72 ou numéro 17"><label>Notes et paramètres</label><input id="obsNote" placeholder="Ex. date, nombre de mines, lignes…"><button class="secondary" id="addObs">Enregistrer dans l'historique</button></div>
+ <div class="card"><h2>Importer une capture</h2><p class="tiny muted">La capture est affichée pour consultation. L'extraction automatique des chiffres (OCR) n'est pas encore intégrée.</p><input type="file" id="shot" accept="image/*"><img id="shotPreview" class="preview hidden" alt="Capture importée"></div>
+</section>
+
+<section id="history" class="page hidden">
+ <div class="card"><h2>Historique local</h2><div class="tiny muted">Les observations restent dans le stockage du navigateur sur cet appareil.</div><div id="historyList" style="margin-top:10px">Aucune donnée.</div><button class="secondary" id="csv">Exporter CSV</button> <button class="secondary" id="erase">Effacer</button></div>
+</section>
+</main><footer>OREDA CASINO SNIPER ULTIMATE · Analyse éducative · Bêta 0.2</footer>
+
+<script>
+const KEY='oredaUltimateV2';let data=[];try{data=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){}
+const $=x=>document.getElementById(x);
+const descriptions={
+Aviator:"Étudie une probabilité théorique de dépassement d'un multiplicateur selon un modèle hypothétique paramétrable. Ce modèle ne lit pas le générateur du casino et ne prédit pas le prochain vol.",
+Mines:"Calcule la probabilité combinatoire de survivre à plusieurs sélections sans mine, selon le nombre total de cases et de mines choisi.",
+Plinko:"Simule une distribution binomiale simplifiée pour des rebonds indépendants et équiprobables à gauche ou à droite. Les vrais tableaux de paiement peuvent différer.",
+Roulette:"Calcule les probabilités théoriques d'une roulette européenne ou américaine et décrit les fréquences d'un historique saisi. Les tours sont indépendants.",
+Slots:"Calcule un retour théorique à partir du RTP saisi et simule une plage de résultats selon une volatilité simplifiée. Le RTP n'est pas une garantie de session."
+};
+function fields(game){
+ const common={Aviator:`<label>Multiplicateur cible (x)</label><input id="target" type="number" min="1" step=".01" value="2"><label>Paramètre de modèle k (hypothèse, souvent proche de 1)</label><input id="modelK" type="number" min=".1" step=".01" value="1">`,
+ Mines:`<label>Nombre total de cases</label><input id="cells" type="number" min="2" max="100" value="25"><label>Nombre de mines</label><input id="mines" type="number" min="1" max="99" value="3"><label>Nombre de cases sûres à choisir</label><input id="picks" type="number" min="1" max="24" value="3">`,
+ Plinko:`<label>Nombre de rangées / rebonds</label><input id="rows" type="number" min="1" max="30" value="8"><label>Nombre de simulations</label><input id="trials" type="number" min="100" max="100000" step="100" value="5000">`,
+ Roulette:`<label>Type de roulette</label><select id="wheel"><option value="37">Européenne (37 cases)</option><option value="38">Américaine (38 cases)</option></select><label>Historique de numéros (séparés par des virgules, facultatif)</label><textarea id="numbers" placeholder="Ex. 12, 0, 21, 8, 12"></textarea>`,
+ Slots:`<label>RTP théorique annoncé (%)</label><input id="rtp" type="number" min="0" max="100" step=".01" value="96"><label>Mise fictive par tour (FCFA)</label><input id="stake" type="number" min="1" value="100"><label>Nombre de tours simulés</label><input id="spins" type="number" min="1" max="100000" value="100">`};
+ $('engineFields').innerHTML=common[game];$('calcTitle').textContent='Calcul spécialisé · '+game;$('engineDescription').textContent=descriptions[game];$('engineResult').classList.add('hidden');
+}
+function num(id){return Number($(id).value)}
+function fmt(x){return Number(x).toLocaleString('fr-FR',{maximumFractionDigits:4})}
+function choose(n,k){if(k<0||k>n)return 0;k=Math.min(k,n-k);let v=1;for(let i=1;i<=k;i++)v=v*(n-k+i)/i;return v}
+function calculate(){
+ const g=$('engineSelect').value;let out='';
+ if(g==='Aviator'){let t=num('target'),k=num('modelK');if(t<=1||k<=0)throw Error('Entre un multiplicateur supérieur à 1 et un k positif.');let p=Math.min(1,k/t);out=`<b>Probabilité hypothétique de dépasser ${fmt(t)}x :</b> ${(p*100).toFixed(2)} %.<br><b>Probabilité de ne pas atteindre ce seuil :</b> ${((1-p)*100).toFixed(2)} %.<br><span class="tiny muted">Modèle illustratif P(M ≥ x) = k/x, non calibré sur 1xBet. Il ne fournit aucune information sur le prochain tour.</span>`}
+ if(g==='Mines'){let n=num('cells'),m=num('mines'),p=num('picks');if(n<2||m<1||m>=n||p<1||p>n-m)throw Error('Paramètres incompatibles : vérifie cases, mines et sélections.');let safe=choose(n-m,p)/choose(n,p);out=`<b>Probabilité théorique de survivre à ${p} sélection(s) :</b> ${(safe*100).toFixed(4)} %.<br><b>Risque de toucher une mine :</b> ${((1-safe)*100).toFixed(4)} %.<br><span class="tiny muted">Calcul combinatoire, en supposant des cases uniformément mélangées.</span>`}
+ if(g==='Plinko'){let r=num('rows'),tr=num('trials');if(r<1||r>30||tr<100||tr>100000)throw Error('Choisis 1–30 rangées et 100–100 000 simulations.');let counts=Array(r+1).fill(0);for(let i=0;i<tr;i++){let right=0;for(let j=0;j<r;j++)if(Math.random()<.5)right++;counts[right]++}let probs=counts.map((c,i)=>({i,p:c/tr*100}));let max=Math.max(...counts);out=`<b>Simulation de ${tr.toLocaleString('fr-FR')} trajectoires :</b><br>`+probs.map(x=>`${x.i} droite(s) : ${x.p.toFixed(2)} %`).join('<br>')+`<br><span class="tiny muted">Modèle simplifié avec rebonds indépendants 50/50. Ce n'est pas une prévision des résultats du jeu réel.</span>`}
+ if(g==='Roulette'){let n=num('wheel'),nums=$('numbers').value.trim().split(/[,\s;]+/).filter(Boolean);let valid=nums.map(Number).filter(x=>Number.isInteger(x)&&x>=0&&x<n);let single=1/n;out=`<b>Probabilité d'un numéro précis :</b> ${(single*100).toFixed(4)} %.<br><b>Rouge/noir (roulette européenne) :</b> 18/${n} = ${(18/n*100).toFixed(2)} % si applicable.<br><b>Historique valide saisi :</b> ${valid.length} résultat(s).`;if(valid.length){let freq={};valid.forEach(x=>freq[x]=(freq[x]||0)+1);let top=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,5);out+=`<br><b>Plus fréquents dans l'échantillon :</b> ${top.map(([x,c])=>`${x} (${c})`).join(', ')}.`}out+=`<br><span class="tiny muted">Les fréquences passées ne changent pas les probabilités du prochain tour.</span>`}
+ if(g==='Slots'){let r=num('rtp'),s=num('stake'),sp=num('spins');if(r<0||r>100||s<=0||sp<1||sp>100000)throw Error('Vérifie RTP (0–100 %), mise et nombre de tours.');let total=s*sp,expected=total*r/100,loss=total-expected;out=`<b>Mises totales simulées :</b> ${fmt(total)} FCFA.<br><b>Retour moyen théorique :</b> ${fmt(expected)} FCFA.<br><b>Perte moyenne théorique :</b> ${fmt(loss)} FCFA.<br><span class="tiny muted">Projection mathématique à long terme selon le RTP annoncé, pas le résultat probable d'une session courte. La volatilité et les gains réels ne sont pas modélisés ici.</span>`}
+ $('engineResult').innerHTML=out;$('engineResult').classList.remove('hidden');
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){ $('totalObs').textContent=data.length;$('historyList').innerHTML=data.length?data.slice().reverse().map(x=>`<div class="entry"><span><b>${esc(x.game)}</b><br><span class="tiny muted">${esc(x.date)} · ${esc(x.note||'Sans note')}</span></span><b>${esc(x.value)}</b></div>`).join(''):'Aucune donnée.'}
+function store(){localStorage.setItem(KEY,JSON.stringify(data));render()}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.page').forEach(p=>p.classList.toggle('hidden',p.id!==b.dataset.page))});
+document.querySelectorAll('[data-engine]').forEach(b=>b.onclick=()=>{$('engineSelect').value=b.dataset.engine;fields(b.dataset.engine);document.querySelector('[data-page="engines"]').click()});
+$('engineSelect').onchange=()=>fields($('engineSelect').value);
+$('runEngine').onclick=()=>{try{calculate()}catch(e){$('engineResult').textContent=e.message;$('engineResult').classList.remove('hidden')}};
+$('addObs').onclick=()=>{let v=$('obsValue').value.trim();if(!v){alert('Saisis une observation.');return}data.push({game:$('engineSelect').value,value:v,note:$('obsNote').value.trim(),date:new Date().toLocaleString('fr-FR')});$('obsValue').value='';$('obsNote').value='';store();alert('Observation enregistrée localement.')};
+$('shot').onchange=e=>{let f=e.target.files[0];if(!f)return;$('shotPreview').src=URL.createObjectURL(f);$('shotPreview').classList.remove('hidden')};
+$('csv').onclick=()=>{let rows=[['jeu','valeur','notes','date'],...data.map(x=>[x.game,x.value,x.note,x.date])];let csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(';')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));a.download='oreda-casino-observations.csv';a.click();URL.revokeObjectURL(a.href)};
+$('erase').onclick=()=>{if(confirm('Effacer toutes les observations de cet appareil ?')){data=[];store()}};
+function start(){fields('Aviator');render()}
+start();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script></body></html>
